@@ -1,11 +1,15 @@
 import Replicate from "replicate";
+import { models } from '../models.js';
+import { config } from 'dotenv';
+
+config();
 
 const replicate = new Replicate({
   auth: process.env.REPLICATE_API_TOKEN,
 });
 
 const output = await replicate.run(
-    "prompthero/openjourney:ad59ca21177f9e217b9075e7300cf6e14f7e5b4505b87b9689dbd866e9768969",
+    models.openJourney,
     {
       input: {
         seed: null,

@@ -1,4 +1,5 @@
 import Replicate from "replicate";
+import { models } from '../models.js';
 import { config } from 'dotenv';
 config();
 
@@ -9,7 +10,7 @@ const replicate = new Replicate({
 
 
 const output = await replicate.run(
-    "yan-ops/face_swap:d5900f9ebed33e7ae08a07f17e0d98b4ebc68ab9528a70462afc3899cfe23bab",
+    models.faceSwap,
     {
       input: {
         weight: 0.5,

@@ -1,5 +1,7 @@
 import Replicate from "replicate";
+import { models } from '../models.js';
 import { config } from 'dotenv';
+
 config();
 
 
@@ -9,7 +11,7 @@ const replicate = new Replicate({
 
 
 const output = await replicate.run(
-    "batouresearch/high-resolution-controlnet-tile:4af11083a13ebb9bf97a88d7906ef21cf79d1f2e5fa9d87b70739ce6b8113d29",
+    models.highResolution,
     {
       input: {
         hdr: 0.7,
