@@ -4,7 +4,7 @@
 
 **Example Usage**
 
-Here is an example of how we use the `stability-ai/sdxl` model in `replicate.js`:
+Here is an example of how we use the `stability-ai/sdxl` model in `stability-ai.js`:
 
 ```javascript
 import Replicate from "replicate";
