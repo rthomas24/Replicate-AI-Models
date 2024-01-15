@@ -1,8 +1,6 @@
 import Replicate from "replicate";
 import { models } from '../models.js';
-import { config } from 'dotenv';
-
-config();
+import '../config.js';
 
 
 const replicate = new Replicate({
